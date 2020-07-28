@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".SignActivity">
+
+
+    <EditText
+        android:id="@+id/passwordEdit"
+        android:layout_width="309dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="86dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="85dp"
+        android:drawableLeft="@drawable/ic_password"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/signUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/emailEdit"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/emailEdit"
+        android:layout_width="308dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="53dp"
+        android:drawableLeft="@drawable/ic_email"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/gradient"
+        android:onClick="signUpButton"
+        android:text="Sign up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signIn"
+        app:layout_constraintVertical_bias="0.127" />
+
+    <Button
+        android:id="@+id/signIn"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/gradient"
+        android:onClick="signInButton"
+        android:text="Sign in"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.746" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="264dp"
+        android:layout_height="312dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/passwordEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/splashblack" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
